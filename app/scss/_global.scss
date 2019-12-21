@@ -31,9 +31,9 @@ body {
 }
 
 body {
-	font-family: "Open Sans", sans-serif;
+	font-family: "Arial", sans-serif;
 	font-weight: 400;
-	font-size: 16px;
+	font-size: 15px;
 	line-height: 24px;
 	color: $text;
 }
@@ -52,7 +52,7 @@ li {
 }
 
 .container {
-	max-width: 1170px;
+	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 15px;
 }
@@ -60,5 +60,27 @@ li {
 .container-fluid {
 	max-width: 1920px;
 	margin: 0 auto;
+}
+
+.btn {
+	padding: 14px 50px;
+	background-color: #fff;
+	border-radius: 26px;
+	color: $btn-color;
+	font-family: "Georgia", sans-serif;
+	font-size: 17px;
+	transition: all .3s;
+	&:hover {
+		background-color: $btn;
+	}
+}
+
+.title {
+	font-family: "Georgia", sans-serif;
+	font-size: 35px;
+	text-align: center;
+	line-height: 45px;
+	color: #545454;
+	letter-spacing: .6px;
 }
 
