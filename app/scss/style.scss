@@ -107,7 +107,8 @@
 *******************************			FRIENDS 			**********************************
 **********************************************************************************/
 
-.friends {
+.friends,
+.all-friends {
 	padding: 70px 0;
 	&__title {
 		margin-bottom: 60px;
@@ -337,6 +338,98 @@
 		}
 	}
 }
+
+
+.all-friends {
+	padding: 70px 0;
+	&__title {
+		margin-bottom: 60px;
+	}
+	&__slider {
+		display: flex;
+		justify-content: flex-start;
+		margin-left: -20px;
+		flex-basis: calc(25% - 25px);
+		flex-wrap: wrap;
+		margin-bottom: 50px;
+	}
+	&__item {
+		margin: 0 0 30px;
+		margin-left: 25px;
+	}
+	&__inner {
+		max-width: 1170px;
+		margin: 0;
+	}
+	&__pagination {
+		text-align: center;
+		ul {
+			li {
+				display: inline-block;
+				margin: 0 7px;
+				&:hover {
+					a,
+					span {
+						background-color: $btn;
+						&.pagination-dots {
+							background-color: transparent;
+						}
+					}
+				}
+				a,
+				span {
+					display: inline-block;
+					font-size: 20px;
+					font-family: "Times New Roman", sans-serif;
+					color: $btn-color;
+					width: 50px;
+					height: 50px;
+					line-height: 46px;
+					text-align: center;
+					border-radius: 50%;
+					border: 2px solid $btn;
+					&.active {
+						background-color: $btn;
+					}
+					&.pagination-dots {
+						border: none;
+						color: $btn;
+						width: 30px;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+.header {
+	&.header__friends {
+		min-height: auto;
+		.header {
+			&__top {
+				padding: 30px 0;
+			}
+			&__menu {
+				&-list {
+					li {
+						&:hover {
+							a {
+								color: #292929;
+							}
+							&::after {
+								background-color: $btn;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
 
 
 
