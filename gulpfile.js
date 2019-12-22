@@ -6,6 +6,7 @@ let gulp = require('gulp'),
     rename = require('gulp-rename'),
     del = require('del'),
     autoprefixer = require('gulp-autoprefixer');
+    cssmin = require('gulp-cssmin');
 
 
 gulp.task('clean', async function() {
@@ -27,13 +28,13 @@ gulp.task('css', function() {
     return gulp.src([
         'node_modules/normalize.css/normalize.css',
         'node_modules/slick-carousel/slick/slick.css',
+        'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css',
         //'node_modules/magnific-popup/dist/magnific-popup.css'
     ])
-    .pipe(concat('_libs.scss'))
-    .pipe(gulp.dest('app/scss'))
-    .pipe(browserSync.reload({stream: true}))
+    .pipe(concat('libs.min.css'))
+    .pipe(gulp.dest('app/css'))
+   '' .pipe(browserSync.reload({stream: true}))
 });
-
 gulp.task('html', function(){
   return gulp.src('app/*.html')
   .pipe(browserSync.reload({stream: true}))
@@ -47,6 +48,7 @@ gulp.task('script', function(){
 gulp.task('js', function(){
   return gulp.src([
     'node_modules/slick-carousel/slick/slick.js',
+    'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
     //'node_modules/magnific-popup/dist/jquery.magnific-popup.js'
   ])
     .pipe(concat('libs.min.js'))
