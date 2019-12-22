@@ -108,9 +108,6 @@
 	padding: 70px 0;
 	&__title {
 		margin-bottom: 60px;
-		span {
-			display: block;
-		}
 	}
 	&__inner {
 		max-width: 915px;
@@ -128,7 +125,6 @@
 		padding-bottom: 35px;
 		cursor: pointer;
 		transition: all .3s;
-
 		&:hover {
 			box-shadow: 0px 2px 30.1px 4.9px rgba(13, 13, 13, 0.04);
 		}
@@ -172,9 +168,36 @@
 	}
 }
 
+/*********************************************************************************
+*******************************			HELP 			**********************************
+**********************************************************************************/
 
-
-
+.help {
+	padding: 60px 0 0;
+	&__title {
+		margin-bottom: 70px;
+	}
+	&__inner {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	&__item {
+		cursor: pointer;
+		margin: 0 50px 60px;
+		&-img {
+			display: block;
+			text-align: center;
+			height: 90px;
+		}
+		&-title {
+			font-size: 20px;
+			color: #545454;
+			text-align: center;
+			font-family: "Georgia", sans-serif;
+		}
+	}
+}
 
 
 
