@@ -12,6 +12,9 @@
 	background-position: center;
 	background-size: cover;
 	min-height: 925px;
+	&__logo {
+		cursor: pointer;
+	}
 	&__top {
 		padding: 60px 0;
 		display: flex;
@@ -121,7 +124,7 @@
 		background-color: #fafafa;
 		border-radius: 7px;
 		text-align: center;
-		margin-bottom: 35px;
+		margin: 0 15px 35px;
 		padding-bottom: 35px;
 		cursor: pointer;
 		transition: all .3s;
@@ -199,7 +202,141 @@
 	}
 }
 
+/*********************************************************************************
+*******************************			DONAT 			**********************************
+**********************************************************************************/
 
+.donat {
+	padding: 60px 0 80px;
+	&__inner {
+		display: flex;
+	}
+	&__img {
+		max-width: 505px;
+		width: 100%;
+		margin-right: 60px;
+	}
+	&__content {
+		max-width: 360px;
+		width: 100%;
+		color: #545454;
+		letter-spacing: .6px;
+		&-title {
+			margin-bottom: 20px;
+			text-align: left;
+			font-size: 35px;
+			line-height: 45px;
+		}
+		&-subtitle {
+			font-size: 15px;
+			margin-bottom: 10px;
+			font-family: "Georgia", sans-serif;
+		}
+		&-card {
+			display: inline-block;
+			padding: 10px 10px 10px 60px;
+			color: $btn-color;
+			background-color: $btn;
+			font-size: 20px;
+			border-radius: 5px;
+			margin-bottom: 30px;
+			font-family: "Times New Roman", sans-serif;
+			position: relative;
+			&::before {
+				content: "";
+				position: absolute;
+				left: 10px;
+				width: 30px;
+				height: 24px;
+				background-image: url(../img/icons/credit-card.png);
+			}
+		}
+		&-text {
+			font-family: "Arial, sans-serif";
+			font-size: 12px;
+			line-height: 18px;
+			font-style: italic;
+			color: #b2b2b2;
+			letter-spacing: 0;
+			padding-right: 10px;	
+		}
+	}
+}
+
+/*********************************************************************************
+*******************************			FOOTER 			**********************************
+**********************************************************************************/
+
+.footer {
+	padding: 70px 0;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	&__inner {
+		display: flex;
+	}
+	&__item {
+		max-width: 300px;
+		width: 100%;
+		& + .footer__item {
+			margin-left: 160px;
+		}
+		&-title {
+			color: #fff;
+			margin-bottom: 30px;
+			text-align: left;
+			padding-right: 15px;
+		}
+		&-contact {
+			a {
+				&.email {
+					&::before {
+						width: 40px;
+						height: 26px;
+						background-image: url(../img/icons/footer-icon-1.png);
+					}
+				}
+				&.phone {
+					&::before {
+						width: 40px;
+						top: -2px;
+						height: 32px;
+						background-image: url(../img/icons/footer-icon-2.png);
+					}
+				}
+			}
+			a,
+			span {
+				display: inline-block;
+				font-size: 20px;
+				letter-spacing: .6px;
+				color: $btn;
+				font-family: "Times New Roman", sans-serif;
+				padding-left: 55px;
+				position: relative;
+				&::before {
+					content: "";
+					position: absolute;
+					left: 0;
+				}
+				& + a,
+				& + span {
+					margin-top: 45px;
+				}
+			}
+			span {
+				&::before {
+					width: 26px;
+					height: 36px;
+					background-image: url(../img/icons/footer-icon-3.png);
+				}
+				& + span {
+					margin-top: 20px;
+				}
+			}
+		}
+	}
+}
 
 
 
