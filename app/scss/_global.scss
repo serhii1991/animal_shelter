@@ -63,13 +63,14 @@ li {
 }
 
 .btn {
-	padding: 14px 50px;
+	padding: 12px 50px;
 	background-color: #fff;
 	border-radius: 26px;
 	color: $btn-color;
 	font-family: "Georgia", sans-serif;
 	font-size: 17px;
 	transition: all .3s;
+	border: solid 2px $btn;
 	&:hover {
 		background-color: $btn;
 	}

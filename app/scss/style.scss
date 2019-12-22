@@ -100,6 +100,78 @@
 	}
 }
 
+/*********************************************************************************
+*******************************			FRIENDS 			**********************************
+**********************************************************************************/
+
+.friends {
+	padding: 70px 0;
+	&__title {
+		margin-bottom: 60px;
+		span {
+			display: block;
+		}
+	}
+	&__inner {
+		max-width: 915px;
+		margin: 0 auto;
+	}
+	&__slider {
+		position: relative;
+	}
+	&__item {
+		width: 270px !important;
+		background-color: #fafafa;
+		border-radius: 7px;
+		text-align: center;
+		margin-bottom: 35px;
+		padding-bottom: 35px;
+		cursor: pointer;
+		transition: all .3s;
+
+		&:hover {
+			box-shadow: 0px 2px 30.1px 4.9px rgba(13, 13, 13, 0.04);
+		}
+		&-img {
+			margin-bottom: 25px;
+		}
+		&-name {
+			font-size: 20px;
+			letter-spacing: .6px;
+			color: #545454;
+			margin-bottom: 20px;
+			font-family: "Georgia", sans-serif;
+		}
+	}
+	.slick {
+		&-arrow {
+			position: absolute;
+			top: 50%;
+			transform: translateX(-50%);
+			background-color: transparent;
+			width: 50px;
+			height: 50px;
+			border: solid 2px $btn;
+			border-radius: 50%;
+			transition: all .3s;
+			cursor: pointer;
+			&:hover {
+				background-color: $btn;
+			}
+		}
+		&-prev {
+			left: -100px;
+			z-index: 1;
+		}
+		&-next {
+			right: -100px;
+		}
+	}
+	&__link {
+		text-align: center;
+	}
+}
+
 
 
 
