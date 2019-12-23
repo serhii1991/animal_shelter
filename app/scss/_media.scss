@@ -1,0 +1,254 @@
+/*===========================				MEDIA MAX-WIDTH = 1080px				==================================*/
+
+@media(max-width: 1080px) {
+	.fancybox-slide--html .fancybox-close-small {
+		right: 10px;
+		top: 10px;
+	}
+}
+
+/*===========================				MEDIA MAX-WIDTH = 945px				==================================*/
+
+@media(max-width: 945px) {
+	.donat {
+		&__inner {
+			flex-wrap: wrap;
+		}
+		&__img {
+			max-width: 100%;
+			margin-right: 60px;
+			text-align: center;
+			margin-bottom: 30px;
+			img {
+				width: 300px;
+			}
+		}
+		&__content {
+			margin: 0 auto;
+		}
+	}
+}
+
+
+/*===========================				MEDIA MAX-WIDTH = 768px				==================================*/
+
+@media(max-width: 768px) {
+	.header {
+		&__top {
+			padding: 20px 0;
+			position: relative;
+		}
+		&__text {
+			background-color: #322a28;
+			padding: 10px;
+		}
+		&__menu {
+			&-list {
+				background-color: #322a28;
+				display: none;
+				position: absolute;
+				top: 70px;
+				right: 0;
+				left: 0;
+				text-align: center;
+				margin-left: -15px;
+				margin-right: -15px;
+				padding: 10px 0;
+				li {
+					cursor: pointer;
+					display: block;
+					&::after {
+						display: none;
+					}
+					& + li {
+						margin-left: 0;
+					}
+				}
+			}
+		}
+		.menu__btn {
+			display: flex;
+		}
+	}
+	.about {
+		padding: 60px 0;
+		&__inner {
+			flex-wrap: wrap;
+		}
+		&__content {
+			max-width: 100%;
+			&-title {
+				text-align: center;
+			}
+		}
+		&__img {
+			max-width: 100%;
+			margin-bottom: 30px;
+			margin-right: 0;
+		}
+	}
+
+	.footer {
+		&__inner {
+			flex-wrap: wrap;
+		}
+		&__item  {
+			&-title {
+				font-size: 24px;
+				line-height: 30px;
+			}
+			&-contact {
+				a {
+					font-size: 15px;
+					padding-left: 45px;
+					&.email,
+					&.phone {
+						&::before {
+							background-size: 25px;
+						}
+					}
+					& + a {
+						margin-top: 20px;
+					}
+				}
+				span {
+					font-size: 15px;
+					padding-left: 45px;
+					&::before {
+						background-size: 25px;
+					}
+
+				}
+			}
+			& + .footer__item {
+				margin-left: 0;
+			}
+		}
+	}
+
+	.header {
+		&.header__friends {
+			.header {
+				&__top {
+				}
+				&__menu {
+					&-list {
+						top: 118px;
+						background-color: #fff;
+					}
+				}
+			}
+		}
+	}
+}
+
+/*===========================				MEDIA MAX-WIDTH = 700px				==================================*/
+
+@media(max-width: 700px) {
+	.modal-item {
+		padding: 35px 20px;
+		&__inner {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		&__img {
+			min-height: 270px;
+		}
+	}
+}
+
+/*===========================				MEDIA MAX-WIDTH = 646px				==================================*/
+
+@media(max-width: 646px) {
+	.footer {
+		&__inner {
+			justify-content: center;
+		}
+		&__item {
+			margin-bottom: 30px;
+		}
+	}
+}
+
+
+
+/*===========================				MEDIA MAX-WIDTH = 500px				==================================*/
+
+@media(max-width: 500px) {
+	.about {
+		&__content {
+			&-title {
+				font-size: 24px;
+				line-height: 30px;
+			}
+		}
+	}
+
+	.friends,
+	.help {
+		&__title {
+			font-size: 24px;
+			line-height: 30px;
+		}
+	}
+
+	.donat {
+		&__content {
+			&-title {
+				font-size: 24px;
+				line-height: 30px;
+				text-align: center;
+			}
+		}
+	}
+
+	.all-friends__title {
+		font-size: 24px;
+		line-height: 30px;
+	}
+
+	.all-friends {
+		&__pagination {
+			ul {
+				li {
+					margin: 0 3px;
+					a,
+					span {
+						height: 35px;
+						width: 35px;
+						font-size: 16px;
+						line-height: 32px;
+					}
+					a {
+						&.pagination-dots {
+							width: 15px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/*===========================				MEDIA MAX-WIDTH = 360px				==================================*/
+
+@media(max-width: 360px) {
+	.donat {
+		&__content {
+			&-card {
+				font-size: 16px;
+				margin-bottom: 15px;
+			}
+		}
+	}
+}
+
+
+
+/*===========================				MEDIA min-WIDTH = 769px				==================================*/
+
+@media(min-width: 769px) {
+	.header__menu-list {
+		display: block !important;
+	}
+}
